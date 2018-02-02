@@ -263,7 +263,7 @@ iPhone 5s (Global):
 	iPhone 3,3, iOS 7.1.2
 	</center>
 	</div><br>
-	iPhone 4 (GSM / 2012):
+	iPhone 4 (GSM):
 
 	<!-- iPhone 3,2 iPhone 4 (GSM / 2012) -->
 	<a href="check.php?device=iPhone3,2&boardconfig=n90bap&version=7.1.2">
