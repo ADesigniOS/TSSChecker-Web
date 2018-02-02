@@ -23,6 +23,7 @@
 		text-align: center;
 		color: black;
 		font-family: arial;
+		border-bottom: 1px lightgray solid;
 		border-top: 1px lightgray solid;
 		padding: 16px 0px;
 	}
@@ -51,7 +52,7 @@
 	
 	<!-- iPhone 10,1 iPhone 8 -->
 	<a href="check.php?device=iPhone10,1&boardconfig=d20ap&version=11.2.5">
-	<div class="btn_bottom">
+	<div class="btn">
 	<center>
 	iPhone10,1, iOS 11.2.5
 	</center>
