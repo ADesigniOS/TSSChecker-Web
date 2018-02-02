@@ -193,8 +193,7 @@
 	iPhone 6,2, iOS 11.2.5 
 	</center>
 	</div>
-
-
+	
 	<!-- 32-bit Devices Start Here! -->
 
 	<!-- iPhone 5,4 iPhone 5c -->
