@@ -60,27 +60,20 @@
     <div class="page-content">
       <div class="content-block-title">Signing Status</div>
       <?php 
-        $cache = json_decode(file_get_contents("../internal_files/json/status_cache.json"), true);
-        // print_r($cache);
-        foreach ($cache["devices"] as $id => $deviceCache) {
-          if ($id == $device) {
-            $firmware_caches = $deviceCache['firmwares'];
-            foreach ($firmware_caches as $firmware_cache) {
-              if ($firmware_cache['version'] == $version) {
-                $firmware_url = $firmware_cache['url'];
-                if ($firmware_cache['signed']) {
-                  $signed_text = "is signed!";
-                  $signed = "yes";
-                } elseif (!$firmware_cache['signed']) {
-                  $signed_text = "is not signed!";
-                  $signed = "no";
-                } else {
-                  $signed_text = "an unknown error occured!";
-                  $signed = "no";
-                }
-              }
-            }
-          }
+        $output = shell_exec("cd ../internal_files; ./tsschecker/tsschecker_macos -d $device_clean --boardconfig $boardconfig_clean -i $version_clean");
+        $arr1 = explode(PHP_EOL, $output);
+        end($arr1);
+        $arr2 = prev($arr1);
+        // print_r($arr2);
+        if (GetBetween($arr2, "IS ", " signed!") == "NOT being") {
+          $signed_text = "is not signed!";
+          $signed = "no";
+        } elseif (GetBetween($arr2, "IS ", " signed!") == "being") {
+          $signed_text = "is signed!";
+          $signed = "yes";
+        } else {
+          $signed_text = "an unknown error occured!";
+          $signed = "no";
         }
       ?>
       <?php if ($signed == "yes"): ?>
@@ -105,32 +98,6 @@
               </div>
           </div>
       </div>
-
-      <div class="content-block-title">Download IPSW</div>
-
-      <?php if ($signed == "yes"): ?>
-        <div class="card" style="background-image: linear-gradient(to right, #84c1ec, #66c4e7, #49c6dd, #36c6cc, #39c6b7); color: white;" onclick="window.location.href = '<?php echo $firmware_url; ?>'">
-        <?php else: ?>
-          <div class="card" style="background-image: linear-gradient(to right, #f28ca8, #f48a9f, #f58995, #f5898c, #f48982); color: white;" onclick="window.location.href = '<?php echo $firmware_url; ?>'">
-      <?php endif ?>
-
-          <div class="card-content">
-              <div class="card-content-inner">
-                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 500; font-size: 20px;"><?php echo "$name"; ?></span>
-                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;">
-                  <?php if (strpos($device, "AppleTV") !== false): ?>
-                    <?php echo "on tvOS $version"; ?></span>
-                  <?php else: ?>
-                    <?php echo "on iOS $version"; ?></span>
-                  <?php endif ?>
-                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;">
-                  Click to download
-                </span>
-                <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $device; ?>.png" width="40px" height="auto" style="display: inline-block;position: absolute;top: 50%;transform: translateY(-50%);float: right;opacity: 0.3;filter: gray;-webkit-filter: grayscale(1);filter: grayscale(1);right: 10%;">
-              </div>
-          </div>
-      </div>
-
     </div>
   </div>
 </div>

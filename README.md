@@ -1,17 +1,15 @@
-# TSSWeb :iphone:
+# TSSWeb //\\\ TSS.WTF :iphone:
 
 
 **TSSChecker** is now web based thanks to @DanielD3V.
 
-**TSSWeb UI & a few other features** added by Joseph Shenton.
-
-**TSSWeb** allows people to easily and quickly check the signing status of iOS & tvOS versions with a nice, clean and easy to use User Interface!
+**TSSWeb //\\\ TSS.WTF** allows people to easily and quickly check the signing status of iOS & tvOS versions with a nice, clean and easy to use User Interface!
 
 
 Installation
 ------------
 
-  To install **TSSWeb** you will need either a Linux VPS, Linux Desktop, macOS VPS or a macOS Desktop, you will also need LAMP/XAMPP server running on said VPS/Desktop.
+  To install **TSSWeb //\\\ TSS.WTF** you will need either a Linux VPS, Linux Desktop, macOS VPS or a macOS Desktop, you will also need LAMP/XAMPP server running on said VPS/Desktop.
   
   If you are using macOS you don't have to modify anything however if you are using linux you will need to change the following.
 
