@@ -2,7 +2,7 @@
   
 
   function AppleTVList() {
-    $devices = json_decode(file_get_contents("https://api.ipsw.me/v2.1/firmwares.json/condensed"), true);
+    $devices = json_decode(file_get_contents("internal_files/firmwares_condensed.json"), true);
 ?>
 
   <?php $array_index = 0; ?>
@@ -32,7 +32,7 @@
   }
 
   function iPadList() {
-    $devices = json_decode(file_get_contents("https://api.ipsw.me/v2.1/firmwares.json/condensed"), true);
+    $devices = json_decode(file_get_contents("internal_files/firmwares_condensed.json"), true);
 ?>
 
   <?php $array_index = 0; ?>
@@ -62,7 +62,7 @@
   }
 
   function iPhoneList() {
-    $devices = json_decode(file_get_contents("https://api.ipsw.me/v2.1/firmwares.json/condensed"), true);
+    $devices = json_decode(file_get_contents("internal_files/firmwares_condensed.json"), true);
 ?>
 
   <?php $array_index = 0; ?>
@@ -93,7 +93,7 @@
   }
 
   function iPodList() {
-    $devices = json_decode(file_get_contents("https://api.ipsw.me/v2.1/firmwares.json/condensed"), true);
+    $devices = json_decode(file_get_contents("internal_files/firmwares_condensed.json"), true);
 ?>
 
   <?php $array_index = 0; ?>
@@ -124,7 +124,7 @@
   }
 
   function deviceFirmwares() {
-    $devices = json_decode(file_get_contents("https://api.ipsw.me/v2.1/firmwares.json/condensed"), true);
+    $devices = json_decode(file_get_contents("internal_files/firmwares_condensed.json"), true);
     ?>
 
     <div class="popup popup-appletv">
