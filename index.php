@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="internal_files/css/framework7.ios.colors.min.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="internal_files/css/my-app.css">
+    <script src="internal_files/js/inobounce.min.js"></script>
   </head>
-  <body class="layout-white">
+  <body class="layout-white" style="overflow: auto; -webkit-overflow-scrolling: touch;">
     <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"><img class="icon" src="https://raziraz.github.io/codepen/img/bolt.svg">
     </div>
     <!-- Status bar overlay for fullscreen mode-->
