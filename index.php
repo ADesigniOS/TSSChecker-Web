@@ -211,6 +211,15 @@
 	iPhone 7,1, iOS 11.2.5 
 	</center>
 	</div><br>
+		
+	<!-- iPhone 6,2 iPhone 5s (Global) -->
+		<br> iPhone 5s (Global):
+	<a href="check.php?device=iPhone6,2&boardconfig=n53ap&version=11.2.5">
+	<div class="btn_bottom">
+	<center>
+	iPhone 6,2, iOS 11.2.5 
+	</center>
+	</div>
 
 	<!-- iPhone 6,1 iPhone 5s (GSM) -->
 		<br> iPhone 5s (GSM):
@@ -220,15 +229,6 @@
 	iPhone 6,1, iOS 11.2.5 
 	</center>
 	</div><br>
-
-	<!-- iPhone 6,2 iPhone 5s (Global) -->
-		<br> iPhone 5s (Global):
-	<a href="check.php?device=iPhone6,2&boardconfig=n53ap&version=11.2.5">
-	<div class="btn_bottom">
-	<center>
-	iPhone 6,2, iOS 11.2.5 
-	</center>
-	</div>
 	
 	<!-- 32-bit Devices Start Here! -->
 
@@ -249,6 +249,15 @@
 	iPhone 5,3, iOS 10.3.3
 	</center>
 	</div><br>
+		
+	<!-- iPhone 5,2 iPhone 5 (Global) -->
+		<br> iPhone 5 (Global):
+	<a href="check.php?device=iPhone5,2&boardconfig=n42ap&version=10.3.3">
+	<div class="btn_bottom">
+	<center>
+	iPhone 5,2, iOS 10.3.3 
+	</center>
+	</div><br>
 
 	<!-- iPhone 5,1 iPhone 5 (GSM) -->
 		<br> iPhone 5 (GSM):
@@ -256,15 +265,6 @@
 	<div class="btn_bottom">
 	<center>
 	iPhone 5,1, iOS 10.3.3 
-	</center>
-	</div><br>
-
-	<!-- iPhone 5,2 iPhone 5 (Global) -->
-		<br> iPhone 5 (Global):
-	<a href="check.php?device=iPhone5,2&boardconfig=n42ap&version=10.3.3">
-	<div class="btn_bottom">
-	<center>
-	iPhone 5,2, iOS 10.3.3 
 	</center>
 	</div><br>
 
