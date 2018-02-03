@@ -1,7 +1,6 @@
 <?php
   
   include 'internal_files/php/functions.php';
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +18,7 @@
     <script src="internal_files/js/inobounce.min.js"></script>
   </head>
   <body class="layout-white" style="overflow: auto; -webkit-overflow-scrolling: touch;">
-    <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"><img class="icon" src="https://raziraz.github.io/codepen/img/bolt.svg">
+    <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
     </div>
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
@@ -95,13 +94,7 @@
                 </ul>
               </div>
               <br>
-              <div class="card" style="background-image: linear-gradient(to right, #333333, #3c3b3c, #454345, #504b4d, #5a5454); color: white;" onclick="window.location.href = 'https://github.com/danieldevofficial/TSSChecker-Web';">
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                          <center><h3>Fork me on GitHub</h3></center>
-                        </div>
-                    </div>
-                </div>
+              <center><button style="background-image: linear-gradient(to right top, #456494, #008dc0, #00b5bb, #00d781, #a8eb12); color: white; height: 40px; border-radius: 5px; width: 80%; border: none; font-size: 15px;" onclick="window.location.href = 'https://github.com/danieldevofficial/TSSChecker-Web';">Fork me on GitHub</button>
               <!-- <div class="content-block-title">Saved Blobs</div>
               <div class="list-block accordion-list">
                 <ul>
