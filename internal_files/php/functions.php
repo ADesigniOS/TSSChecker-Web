@@ -18,7 +18,7 @@
             <div class="card-content">
                 <div class="card-content-inner">
                   <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 500; font-size: 18px;"><?php echo "$deviceName"; ?></span>
-                  <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;"><?php echo "on iOS $latest"; ?></span>
+                  <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;"><?php echo "on tvOS $latest"; ?></span>
                   <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $id; ?>.png" width="35px" height="auto" style="display: inline-block;position: absolute;top: 50%;transform: translateY(-50%);float: right;opacity:0.4;right: 10%;">
                 </div>
             </div>
@@ -152,7 +152,7 @@
                     <?php if (strpos($id, "AppleTV") !== false): ?>
                       <?php foreach ($firmwares as $firmware): ?>
                         <li class="<?php echo str_replace(',', '_', $id); ?>" style="display: none;">
-                          <a href="check.php?device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
+                          <a href="pages/check.php?name=<?php echo $deviceName; ?>&device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
                             <div class="item-content">
                               <div class="item-media">
                                 <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $id; ?>.png" width="32px" height="auto">
@@ -200,7 +200,7 @@
                     <?php if (strpos($id, "iPad") !== false): ?>
                       <?php foreach ($firmwares as $firmware): ?>
                         <li class="<?php echo str_replace(',', '_', $id); ?>" style="display: none;">
-                          <a href="check.php?device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
+                          <a href="pages/check.php?name=<?php echo $deviceName; ?>&device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
                             <div class="item-content">
                               <div class="item-media">
                                 <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $id; ?>.png" width="32px" height="auto">
@@ -248,7 +248,7 @@
                     <?php if (strpos($id, "iPhone") !== false): ?>
                       <?php foreach ($firmwares as $firmware): ?>
                         <li class="<?php echo str_replace(',', '_', $id); ?>" style="display: none;">
-                          <a href="check.php?device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
+                          <a href="pages/check.php?name=<?php echo $deviceName; ?>&device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
                             <div class="item-content">
                               <div class="item-media">
                                 <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $id; ?>.png" width="32px" height="auto">
@@ -296,7 +296,7 @@
                     <?php if (strpos($id, "iPod") !== false): ?>
                       <?php foreach ($firmwares as $firmware): ?>
                         <li class="<?php echo str_replace(',', '_', $id); ?>" style="display: none;">
-                          <a href="check.php?device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
+                          <a href="pages/check.php?name=<?php echo $deviceName; ?>&device=<?php echo str_replace(',', '..', $id); ?>&boardconfig=<?php echo $boardconfig; ?>&version=<?php echo $firmware['version']; ?>" class="close-popup item-link">
                             <div class="item-content">
                               <div class="item-media">
                                 <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $id; ?>.png" width="32px" height="auto">

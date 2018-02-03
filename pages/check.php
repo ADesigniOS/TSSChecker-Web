@@ -1,18 +1,27 @@
 <?php
   if (isset($_GET['device']) && trim($_GET['device']) != '') {
       $device = htmlentities(str_replace("..", ",", $_GET['device']), ENT_QUOTES);
+      $device_clean = escapeshellarg($device);
   } else {
       $device = '';
   }
 
+  if (isset($_GET['name']) && trim($_GET['name']) != '') {
+      $name = htmlentities(urldecode($_GET['name']), ENT_QUOTES);
+  } else {
+      $name = '';
+  }
+
   if (isset($_GET['version']) && trim($_GET['version']) != '') {
       $version = htmlentities($_GET['version'], ENT_QUOTES);
+      $version_clean = escapeshellarg($version);
   } else {
       $version = '';
   }
 
   if (isset($_GET['boardconfig']) && trim($_GET['boardconfig']) != '') {
       $boardconfig = htmlentities($_GET['boardconfig'], ENT_QUOTES);
+      $boardconfig_clean = escapeshellarg($boardconfig);
   } else {
       $boardconfig = '';
   }
@@ -39,7 +48,7 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span></span></a></div>
-    <div class="center sliding"><?php echo $device; ?></div>
+    <div class="center sliding"><?php echo $name; ?></div>
     <div class="right">
     </div>
   </div>
@@ -75,11 +84,16 @@
       <?php endif ?>
           <div class="card-content">
               <div class="card-content-inner">
-                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 500; font-size: 20px;"><?php echo "$device"; ?></span>
-                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;"><?php echo "on iOS $version"; ?></span>
+                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 500; font-size: 20px;"><?php echo "$name"; ?></span>
+                <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;">
+                  <?php if (strpos($device, "AppleTV") !== false): ?>
+                    <?php echo "on tvOS $version"; ?></span>
+                  <?php else: ?>
+                    <?php echo "on iOS $version"; ?></span>
+                  <?php endif ?>
                 <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;">
                   <?php 
-                    $output = shell_exec('./tsschecker/tsschecker_macos -d '.escapeshellarg($device).' --boardconfig '.escapeshellarg($boardconfig).' -i '.escapeshellarg($version));
+                    $output = shell_exec("cd ../internal_files; ./tsschecker/tsschecker_macos -d $device_clean --boardconfig $boardconfig_clean -i $version_clean");
                     $arr1 = explode(PHP_EOL, $output);
                     end($arr1);
                     $arr2 = prev($arr1);
