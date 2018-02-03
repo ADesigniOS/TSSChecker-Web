@@ -233,7 +233,7 @@
 	<!-- 32-bit Devices Start Here! -->
 
 	<!-- iPhone 5,4 iPhone 5c (GSM) -->
-		<br> iPhone 5c:
+		<br> iPhone 5c (GSM):
 	<a href="check.php?device=iPhone5,4&boardconfig=n49app&version=10.3.3">
 	<div class="btn_bottom">
 	<center>
@@ -242,7 +242,7 @@
 	</div><br>
 
 	<!-- iPhone 5,3 iPhone 5c (Global) -->
-	<br> iPhone 5c:
+	<br> iPhone 5c (Global):
 	<a href="check.php?device=iPhone5,3&boardconfig=n48ap&version=10.3.3">
 	<div class="btn_bottom">
 	<center>
