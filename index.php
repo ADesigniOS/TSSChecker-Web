@@ -58,6 +58,24 @@
 	iPhone10,6, iOS 11.2.5
 	</center>
 	</div><br>
+
+	<!-- iPhone 10,4 iPhone 8 Plus (Global) -->
+		<br> iPhone 8 Plus (Global):
+	<a href="check.php?device=iPhone10,5&boardconfig=d211ap&version=11.2.5">
+	<div class="btn_bottom">
+	<center>
+	iPhone10,5, iOS 11.2.5
+	</center>
+	</div><br>
+
+	<!-- iPhone 10,4 iPhone 8 (Global) -->
+		<br> iPhone 8 (Global):
+	<a href="check.php?device=iPhone10,1&boardconfig=d201ap&version=11.2.5">
+	<div class="btn_bottom">
+	<center>
+	iPhone10,4, iOS 11.2.5
+	</center>
+	</div><br>
 	
 	<!-- iPhone 10,3 iPhone X -->
 		<br> iPhone X:
@@ -67,13 +85,13 @@
 	iPhone10,3, iOS 11.2.5
 	</center>
 	</div><br>
-	
-	<!-- iPhone 10,4 iPhone 8 (Global) -->
-		<br> iPhone 8 (Global):
-	<a href="check.php?device=iPhone10,1&boardconfig=d201ap&version=11.2.5">
+
+	<!-- iPhone 10,2 iPhone 8 Plus (GSM) -->
+		<br> iPhone 8 Plus (GSM):
+	<a href="check.php?device=iPhone10,2&boardconfig=d21ap&version=11.2.5">
 	<div class="btn_bottom">
 	<center>
-	iPhone10,4, iOS 11.2.5
+	iPhone10,2, iOS 11.2.5
 	</center>
 	</div><br>
 		
