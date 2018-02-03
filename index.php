@@ -251,7 +251,7 @@
 	</div><br>
 
 	<!-- iPhone 5,1 iPhone 5 (GSM) -->
-		<br> iPhone 5:
+		<br> iPhone 5 (GSM):
 	<a href="check.php?device=iPhone5,1&boardconfig=n41ap&version=10.3.3">
 	<div class="btn_bottom">
 	<center>
@@ -260,7 +260,7 @@
 	</div><br>
 
 	<!-- iPhone 5,2 iPhone 5 (Global) -->
-		<br> iPhone 5:
+		<br> iPhone 5 (Global):
 	<a href="check.php?device=iPhone5,2&boardconfig=n42ap&version=10.3.3">
 	<div class="btn_bottom">
 	<center>
@@ -752,7 +752,7 @@
 	</div>
 
 	<!-- AppleTV 3,2 AppleTV 3rd Gen (2013) -->
-		<br> Apple TV 2nd Gen (2013):
+		<br> Apple TV 3nd Gen (2013):
 	<a href="check.php?device=AppleTV3,2&boardconfig=j33iap&version=8.4.2">
 	<div class="btn_bottom">
 	<center>
@@ -760,7 +760,7 @@
 	</center>
 	</div>
 
-	<!-- AppleTV 5,3 AppleTV 4th Gen -->
+	<!-- AppleTV 5,3 AppleTV 4th Gen (2015) -->
 	<br> Apple TV 4th Gen:
 	<a href="check.php?device=AppleTV5,3&boardconfig=j105aap&version=11.2.5">
 	<div class="btn_bottom">
