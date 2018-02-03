@@ -84,9 +84,9 @@
         }
       ?>
       <?php if ($signed == "yes"): ?>
-        <div class="card" style="background-image: linear-gradient(to right, #84c1ec, #66c4e7, #49c6dd, #36c6cc, #39c6b7); color: white;">
+        <div class="card signed" style="background-image: linear-gradient(to right, #84c1ec, #66c4e7, #49c6dd, #36c6cc, #39c6b7); color: white;">
         <?php else: ?>
-          <div class="card" style="background-image: linear-gradient(to right, #f28ca8, #f48a9f, #f58995, #f5898c, #f48982); color: white;">
+          <div class="card notsigned" style="background-image: linear-gradient(to right, #f28ca8, #f48a9f, #f58995, #f5898c, #f48982); color: white;">
       <?php endif ?>
 
           <div class="card-content">

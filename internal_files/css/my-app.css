@@ -17,14 +17,41 @@
     font-size: 14px;
 }
 
-/**
-* PAGE PRELOADER
-* Replace with your own icon or logo and use on your site
-*/
-/**
-* VARIABLES
-* Tweak them for prefered result 
-*/
+
+.list-block li li:last-child .item-inner:after, .list-block li:last-child li .item-inner:after {
+  background: transparent;
+}
+
+.special li {
+  -webkit-box-shadow: 1px 0px 30px -2px rgba(32, 32, 32, 0.1) !important;
+  -moz-box-shadow: 1px 0px 30px -2px rgba(32, 32, 32, 0.1) !important;
+  box-shadow: 1px 0px 30px -2px rgba(32, 32, 32, 0.1) !important;
+}
+
+.appletv {
+  box-shadow: 0 1px 30px -2px rgba(132, 193, 236, 0.12) !important;
+}
+
+.ipad {
+  box-shadow: 0 1px 30px -2px rgba(166, 38, 208, 0.12) !important;
+}
+
+.iphone {
+  box-shadow: 0 1px 30px -2px rgba(242, 140, 168, 0.12) !important;
+}
+
+.ipod {
+  box-shadow: 0 1px 30px -2px rgba(199, 169, 255, 0.12) !important;
+}
+
+.signed {
+  box-shadow: 0 1px 30px -2px rgba(132, 193, 236, 0.12) !important;
+}
+
+.notsigned {
+  box-shadow: 0 1px 30px -2px rgba(242, 140, 168, 0.12) !important;
+}
+
 #site {
   opacity: 0;
   -webkit-transition: all 2s ease;

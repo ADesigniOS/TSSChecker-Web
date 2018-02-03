@@ -1,0 +1,34 @@
+{
+  "devices": {
+    "Joseph's iPhone": {
+      "identifier": "iPhone9,1",
+      "BoardConfig": "d10ap",
+      "platform": "t8010",
+      "cpid": 32784,
+      "bdid": 8,
+      "ecid": "5482657301265",
+      "blobs": [
+        {
+          "version": "11.2.5",
+          "url": "http://appldnld.apple.com/iOS8/031-07202.20140917.tF6Fs/AppleTV2,1_6.2.1_11D258_Restore.ipsw",
+          "signed": true
+        },
+        {
+          "version": "11.2.2",
+          "url": "http://appldnld.apple.com/iOS7.1/031-01311.20140422.EaugX/AppleTV2,1_6.1.1_11D201c_Restore.ipsw",
+          "signed": false
+        },
+        {
+          "version": "11.2.1",
+          "url": "http://appldnld.apple.com/iOS7.1/031-4478.20140310.XDdib/AppleTV2,1_6.1_11D169b_Restore.ipsw",
+          "signed": false
+        },
+        {
+          "version": "11.2",
+          "url": "http://appldnld.apple.com/iOS7/031-2955.20140221.8j5GW/AppleTV2,1_6.0.2_11B651_Restore.ipsw",
+          "signed": false
+        }
+      ]
+    }
+  }
+}

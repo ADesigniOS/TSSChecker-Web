@@ -94,90 +94,22 @@
                 </ul>
               </div>
               <br>
-              <center><button style="background-image: linear-gradient(to right top, #456494, #008dc0, #00b5bb, #00d781, #a8eb12); color: white; height: 40px; border-radius: 5px; width: 80%; border: none; font-size: 15px;" onclick="window.location.href = 'https://github.com/danieldevofficial/TSSChecker-Web';">Fork me on GitHub</button>
-              <!-- <div class="content-block-title">Saved Blobs</div>
+              <div class="content-block-title">Saved Blobs</div>
               <div class="list-block accordion-list">
                 <ul>
-                  <li class="accordion-item">
-                    <a href="#" class="item-link">
-                      <div class="item-content">
-                        <div class="item-media">
-                          <img src="https://ipsw.me/api/images/320x/assets/images/devices/iPhone9,1.png" width="32px" height="auto">
-                        </div>
-                        <div class="item-inner">
-                          <div class="item-title">Joseph's iPhone</div>
-                          <div class="item-after">4 Blob(s)</div>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="accordion-item-content">
-                      <div class="list-block">
-                        <ul>
-                          <li class="">
-                            <a href="#" class="item-link">
-                              <div class="item-content">
-                                <div class="item-media">
-                                  <img src="https://ipsw.me/api/images/320x/assets/images/devices/iPhone9,1.png" width="32px" height="auto" style="opacity: 0;">
-                                </div>
-                                <div class="item-inner">
-                                  <div class="item-title">iPhone9,1</div>
-                                  <div class="item-after">11.2.5</div>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="">
-                            <a href="#" class="item-link">
-                              <div class="item-content">
-                                <div class="item-media">
-                                  <img src="https://ipsw.me/api/images/320x/assets/images/devices/iPhone9,1.png" width="32px" height="auto" style="opacity: 0;">
-                                </div>
-                                <div class="item-inner">
-                                  <div class="item-title">iPhone9,1</div>
-                                  <div class="item-after">11.2.2</div>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="">
-                            <a href="#" class="item-link">
-                              <div class="item-content">
-                                <div class="item-media">
-                                  <img src="https://ipsw.me/api/images/320x/assets/images/devices/iPhone9,1.png" width="32px" height="auto" style="opacity: 0;">
-                                </div>
-                                <div class="item-inner">
-                                  <div class="item-title">iPhone9,1</div>
-                                  <div class="item-after">11.2.1</div>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="">
-                            <a href="#" class="item-link">
-                              <div class="item-content">
-                                <div class="item-media">
-                                  <img src="https://ipsw.me/api/images/320x/assets/images/devices/iPhone9,1.png" width="32px" height="auto" style="opacity: 0;">
-                                </div>
-                                <div class="item-inner">
-                                  <div class="item-title">iPhone9,1</div>
-                                  <div class="item-after">11.2</div>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
+                  <?php echo listBlobs(); ?>
                 </ul>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
         <!-- Bottom Toolbar-->
-        <!-- <div class="toolbar">
-          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
-        </div> -->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <a href="https://github.com/danieldevofficial/TSSChecker-Web" class="link">Fork me!</a>
+            <!-- <a href="#" class="link">Link 2</a> -->
+          </div>
+        </div>
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
