@@ -59,7 +59,7 @@
 	</center>
 	</div><br>
 
-	<!-- iPhone 10,4 iPhone 8 Plus (Global) -->
+	<!-- iPhone 10,5 iPhone 8 Plus (Global) -->
 		<br> iPhone 8 Plus (Global):
 	<a href="check.php?device=iPhone10,5&boardconfig=d211ap&version=11.2.5">
 	<div class="btn_bottom">
