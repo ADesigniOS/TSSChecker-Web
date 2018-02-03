@@ -94,6 +94,14 @@
                   </li>
                 </ul>
               </div>
+              <br>
+              <div class="card" style="background-image: linear-gradient(to right, #333333, #3c3b3c, #454345, #504b4d, #5a5454); color: white;" onclick="window.location.href = 'https://github.com/danieldevofficial/TSSChecker-Web';">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                          <center><h3>Fork me on GitHub</h3></center>
+                        </div>
+                    </div>
+                </div>
               <!-- <div class="content-block-title">Saved Blobs</div>
               <div class="list-block accordion-list">
                 <ul>
