@@ -3,6 +3,8 @@
 
 **TSSChecker** is now web based thanks to @DanielD3V.
 
+**TSSWeb UI & a few other features** added by Joseph Shenton.
+
 **TSSWeb** allows people to easily and quickly check the signing status of iOS & tvOS versions with a nice, clean and easy to use User Interface!
 
 
