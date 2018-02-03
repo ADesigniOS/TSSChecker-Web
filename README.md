@@ -46,5 +46,3 @@ Authored and maintained by DanielD3V & Joseph Shenton and with help from [contri
 
 [MIT License]: http://mit-license.org/
 [contributors]: http://github.com/danieldevofficial/TSSChecker-Web/contributors
-
-FUCK JosephShenton
