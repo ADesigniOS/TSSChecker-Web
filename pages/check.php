@@ -131,6 +131,23 @@
           </div>
       </div>
 
+      <div class="content-block-title">Save Blobs</div>
+      <div class="card" style="background-image: linear-gradient(to right, #8e78ff, #cf6ade, #f164b9, #fe6c96, #fc7d7b); color: white;" onclick="saveBlobs('<?php echo $device; ?>', '<?php echo $version ?>');">
+      <div class="card-content">
+          <div class="card-content-inner">
+            <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 500; font-size: 20px;"><?php echo "$name"; ?></span>
+            <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;">
+              <?php if (strpos($device, "AppleTV") !== false): ?>
+                <?php echo "on tvOS $version"; ?></span>
+              <?php else: ?>
+                <?php echo "on iOS $version"; ?></span>
+              <?php endif ?>
+            <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 300; font-size: 13px;">
+              Click to save blobs
+            </span>
+            <img src="https://ipsw.me/api/images/320x/assets/images/devices/<?php echo $device; ?>.png" width="40px" height="auto" style="display: inline-block;position: absolute;top: 50%;transform: translateY(-50%);float: right;opacity: 0.3;filter: gray;-webkit-filter: grayscale(1);filter: grayscale(1);right: 10%;">
+          </div>
+      </div>
     </div>
   </div>
 </div>

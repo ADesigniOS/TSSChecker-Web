@@ -30,7 +30,7 @@ Linux:
 Coming Soon
 ---------------
 
-* Blob Saving
+* Blob Saving (Almost there having some issues with the folder creation right now, PHP is putting '****' around variables which it shouldn't do!)
 
 
 Thanks

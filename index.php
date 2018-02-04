@@ -1,5 +1,6 @@
 <?php
-  
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
   include 'internal_files/php/functions.php';
 ?>
 <!DOCTYPE html>
@@ -16,6 +17,7 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="internal_files/css/my-app.css">
     <script src="internal_files/js/inobounce.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body class="layout-white" style="overflow: auto; -webkit-overflow-scrolling: touch;">
     <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">

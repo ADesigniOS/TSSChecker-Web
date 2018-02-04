@@ -33,3 +33,58 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+
+function saveBlobs(deviceID, version) {
+  var deviceName = "";
+  swal({
+    text: 'Please put device name.',
+    content: "input",
+    button: {
+      text: "Next!",
+      closeModal: false,
+    },
+  })
+  .then(name => {
+    if (!name) throw null;
+    deviceName = name;
+    return name;
+  })
+  .then(results => {
+    swal({
+      text: `Please put device ECID for: ${deviceName}.`,
+      content: "input",
+      button: {
+        text: "Next!",
+        closeModal: false,
+      },
+    })
+    .then(ecid => {
+      if (!ecid) throw null;
+      console.log(`internal_files/php/save.php?deviceName=${deviceName}&version=${version}&deviceID=${deviceID}&ecid=${ecid}`);
+      return fetch(`internal_files/php/save.php?deviceName=${deviceName}&version=${version}&deviceID=${deviceID}&ecid=${ecid}`);
+    })
+    .then(result => {
+      return result.text();
+    })
+    .then(saved => {
+      console.log(saved);
+      if (!saved) {
+          return swal("Oops!", "Damn! An Error occured! Please try again later!", "error");
+        }
+      var results = saved.split("\n");
+      if (results[0] == "status: success") {
+        swal("Success!", saved, "success");
+      } else {
+        swal("Oops!", "We're sorry but an unknown error has occured!", "error");
+      }
+    })
+    .catch(err => {
+      if (err) {
+        swal("Oops!", "The AJAX request failed!", "error");
+      } else {
+        swal.stopLoading();
+        swal.close();
+      }
+    });
+  });
+}

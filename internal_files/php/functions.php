@@ -1,5 +1,6 @@
 <?php 
-  
+error_reporting(E_ALL);
+ini_set('display_errors', 1);  
 
   function AppleTVList() {
     $devices = json_decode(file_get_contents("internal_files/json/firmwares_condensed.json"), true);
@@ -385,5 +386,26 @@
 
     }
   }
+
+  function saveBlobs($deviceName, $deviceID, $version, $ecid) {
+      
+      $savePath = "../../blobs/$deviceName/$version";
+      if (!file_exists($savePath)) {
+        mkdir($savePath, 0777, true);
+      }
+
+      
+      $cmd  = "cd ../internal_files; ./tsschecker/tsschecker";
+      $cmd .= " -d $deviceID";
+      $cmd .= " -e $ecid";
+      $cmd .= " -i $version";
+      // $cmd .= " --buildid $buildID";
+      $cmd .= " --save-path $savePath";
+      $cmd .= " -s";
+      return shell_exec($cmd);
+
+      // return "OK";
+
+    }
 
 ?>
