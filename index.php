@@ -108,7 +108,7 @@
         <!-- Bottom Toolbar-->
         <div class="toolbar">
           <div class="toolbar-inner">
-            <a href="https://github.com/danieldevofficial/TSSChecker-Web" class="link">Fork me!</a>
+            <a href="https://github.com/danieldevofficial/TSSChecker-Web" class="external">Fork me!</a>
             <!-- <a href="#" class="link">Link 2</a> -->
           </div>
         </div>
