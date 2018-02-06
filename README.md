@@ -26,6 +26,21 @@ Linux:
 **TO**
 
 	$output = shell_exec("cd ../internal_files; ./tsschecker/tsschecker_linux -d $device_clean --boardconfig $boardconfig_clean -i $version_clean");
+    
+API
+------------
+
+  TSSWeb includes an API that is quite easy to use however is still in development.
+  
+  The API currently contains the following methods
+  
+  	devices/appletv.json|xml
+    devices/ipad.json|xml
+    devices/iphone.json|xml
+    devices/ipod.json|xml
+    devices/all.json|xml
+    
+We are constantly working to improve the API and add more features! 
 
 Coming Soon
 ---------------
