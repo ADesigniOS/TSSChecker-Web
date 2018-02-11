@@ -34,7 +34,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-function saveBlobs(deviceID, version) {
+function saveBlobs(deviceID, version, boardconfig) {
   var deviceName = "";
   swal({
     text: 'Please put device name.',

@@ -132,7 +132,7 @@
       </div>
 
       <div class="content-block-title">Save Blobs</div>
-      <div class="card" style="background-image: linear-gradient(to right, #8e78ff, #cf6ade, #f164b9, #fe6c96, #fc7d7b); color: white;" onclick="saveBlobs('<?php echo $device; ?>', '<?php echo $version ?>');">
+      <div class="card" style="background-image: linear-gradient(to right, #8e78ff, #cf6ade, #f164b9, #fe6c96, #fc7d7b); color: white;" onclick="saveBlobs('<?php echo $device; ?>', '<?php echo $version ?>', '<?php echo $boardconfig ?>');">
       <div class="card-content">
           <div class="card-content-inner">
             <span style="display:block; margin-left: 10px; margin-top: 5px; font-weight: 500; font-size: 20px;"><?php echo "$name"; ?></span>

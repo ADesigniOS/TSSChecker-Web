@@ -31,9 +31,16 @@ include 'functions.php';
 	    $ecid = '';
 	}
 
-	// header('Content-Type: text/plain');
+	if (isset($_GET['boardconfig']) && trim($_GET['boardconfig']) != '') {
+	    $boardconfig = htmlentities($_GET['boardconfig'], ENT_QUOTES);
+	    // $boardconfig_clean = escapeshellarg($boardconfig);
+	} else {
+	    $boardconfig = '';
+	}
 
-	if(saveBlobs($deviceName, $deviceID, $version, $ecid)) {
+	header('Content-Type: text/plain');
+
+	if(saveBlobs($deviceName, $deviceID, $version, $ecid, $boardconfig)) {
 		echo "status: success\ndevice: $deviceName\nmodel: $deviceID\nversion: $version\necid: $ecid";
 	} else {
 		echo "status: failed\ndevice: $deviceName\nmodel: $deviceID\nversion: $version\necid: $ecid";

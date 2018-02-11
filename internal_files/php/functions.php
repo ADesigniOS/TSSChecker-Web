@@ -387,7 +387,7 @@ ini_set('display_errors', 1);
     }
   }
 
-  function saveBlobs($deviceName, $deviceID, $version, $ecid) {
+  function saveBlobs($deviceName, $deviceID, $version, $ecid, $boardconfig) {
 
       $dir = dirname(__FILE__);
 
@@ -405,6 +405,7 @@ ini_set('display_errors', 1);
       $deivceID = escapeshellarg($deviceID);
       $ecid = escapeshellarg($ecid);
       $version = escapeshellarg($version);
+      $boardconfig = escapeshellarg($boardconfig);
 
       $dir = dirname(__FILE__);
 
@@ -416,6 +417,7 @@ ini_set('display_errors', 1);
       $cmd .= " -d $deviceID";
       $cmd .= " -e $ecid";
       $cmd .= " -i $version";
+      $cmd .= " --boardconfig $boardconfig";
       // $cmd .= " --buildid $buildID";
       $cmd .= " --save-path $dir/blobs/$deviceName/$version_unescaped/";
       $cmd .= " -s";
