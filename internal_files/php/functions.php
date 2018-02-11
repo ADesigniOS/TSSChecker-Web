@@ -388,28 +388,44 @@ ini_set('display_errors', 1);
   }
 
   function saveBlobs($deviceName, $deviceID, $version, $ecid) {
+
+      $dir = dirname(__FILE__);
+
+      $dir = str_replace("/internal_files/php", "", $dir);
       
-      $savePath = "../../blobs/$deviceName/$version";
+      $savePath = "$dir/blobs/$deviceName/$version";
       if (!file_exists($savePath)) {
+        $old_umask = umask(0);
+        umask($old_umask);
         mkdir($savePath, 0777, true);
       }
+
+      $version_unescaped = $version;
 
       $deivceID = escapeshellarg($deviceID);
       $ecid = escapeshellarg($ecid);
       $version = escapeshellarg($version);
 
-      
-      $cmd  = "cd ../internal_files; ./tsschecker/tsschecker";
+      $dir = dirname(__FILE__);
+
+      $dir = str_replace("/internal_files/php", "", $dir);
+
+      chmod("$dir/blobs/$deviceName/$version_unescaped/", 0777);
+
+      $cmd  = "cd ../; ./tsschecker/tsschecker_macos";
       $cmd .= " -d $deviceID";
       $cmd .= " -e $ecid";
       $cmd .= " -i $version";
       // $cmd .= " --buildid $buildID";
-      $cmd .= " --save-path $savePath";
+      $cmd .= " --save-path $dir/blobs/$deviceName/$version_unescaped/";
       $cmd .= " -s";
       $shell = shell_exec($cmd);
       if ($shell) {
+        echo $shell;
+        // echo "$dir/blobs/$deviceName/$version_unescaped/";
         return true;
       } else {
+        // echo "$dir/blobs/$deviceName/$version_unescaped/";
         return false;
       }
 
