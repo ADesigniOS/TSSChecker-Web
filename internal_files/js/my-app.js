@@ -60,8 +60,8 @@ function saveBlobs(deviceID, version, boardconfig) {
     })
     .then(ecid => {
       if (!ecid) throw null;
-      console.log(`internal_files/php/save.php?deviceName=${deviceName}&version=${version}&deviceID=${deviceID}&ecid=${ecid}`);
-      return fetch(`internal_files/php/save.php?deviceName=${deviceName}&version=${version}&deviceID=${deviceID}&ecid=${ecid}`);
+      console.log(`internal_files/php/save.php?deviceName=${deviceName}&version=${version}&deviceID=${deviceID}&ecid=${ecid}&boardconfig=${boardconfig}`);
+      return fetch(`internal_files/php/save.php?deviceName=${deviceName}&version=${version}&deviceID=${deviceID}&ecid=${ecid}&boardconfig=${boardconfig}`);
     })
     .then(result => {
       return result.text();
