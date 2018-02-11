@@ -394,6 +394,10 @@ ini_set('display_errors', 1);
         mkdir($savePath, 0777, true);
       }
 
+      $deivceID = escapeshellarg($deviceID);
+      $ecid = escapeshellarg($ecid);
+      $version = escapeshellarg($version);
+
       
       $cmd  = "cd ../internal_files; ./tsschecker/tsschecker";
       $cmd .= " -d $deviceID";
@@ -402,9 +406,12 @@ ini_set('display_errors', 1);
       // $cmd .= " --buildid $buildID";
       $cmd .= " --save-path $savePath";
       $cmd .= " -s";
-      return shell_exec($cmd);
-
-      // return "OK";
+      $shell = shell_exec($cmd);
+      if ($shell) {
+        return true;
+      } else {
+        return false;
+      }
 
     }
 
